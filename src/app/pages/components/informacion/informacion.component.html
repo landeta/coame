@@ -1,0 +1,46 @@
+<div class="span8">
+    <article class="post">
+        <div class="row">
+            <div class="span8">
+
+                <div>
+                    <h3><a href="#"> {{informaciones.titulo}} </a></h3>
+                </div>
+                <div>
+                    <p> {{informaciones.subTitulo}}</p>
+                </div>
+                <!-- start flexslider -->
+                <div class="span8">
+                    <div class="flexslider" style="width: 60%;">
+                        <ul class="slides">
+                            <li>
+                                <img src="../../../../assets/img/coame/{{fotos[0]}}" alt="{{titulos[0]}}">
+                            </li>
+                            <li>
+
+                                <img src="../../../../assets/img/coame/{{fotos[1]}}" alt="{{titulos[1]}}">
+                            </li>
+                            <li>
+                                <img src="../../../../assets/img/coame/{{fotos[2]}}" alt="{{titulos[2]}}">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end flexslider -->
+                <hr>
+
+                <div class="container span8">
+                    <h4> <a href="#"> {{informaciones.autor}} </a></h4>
+                    {{informaciones.descripcion}}
+                </div>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <button (click)="moverse(-1)" class="btn btn-small btn-lg active">Previo</button>
+                    <button (click)="moverse(1)" class="btn btn-small btn-lg active">Próximo</button>
+                </ul>
+
+            </div>
+        </div>
+    </article>
+</div>

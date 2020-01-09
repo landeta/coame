@@ -1,0 +1,63 @@
+<!-- <aside class="col-md-4 hidden-xs hidden-sm"> -->
+<div class="span4">
+    <div class="left-sidebar">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+        <div class="widget left">
+            <form class="form-search ">
+                <input placeholder="Buscar " type="text " class="input-medium search-query ">
+                <button type="submit " class="btn btn-square btn-theme ">Search</button>
+            </form>
+        </div>
+        <div class="widget ">
+            <h5 class="widgetheading ">Astronomía</h5>
+            <ul class="cat ">
+                <li><i class="icon-angle-right "></i><a routerLink="/observatorio">Astronomia</a><span></span></li>
+                <li><i class="icon-angle-right "></i><a routerLink="/observatorio">Espacio Profundo</a><span></span></li>
+                <li><i class="icon-angle-right "></i><a routerLink="/observatorio">Eclipses</a><span></span></li>
+                <li><i class="icon-angle-right "></i><a routerLink="/observatorio">Investigacion</a><span></span></li>
+                <li><i class="icon-angle-right "></i><a routerLink="/observatorio">Mas</a><span></span></li>
+            </ul>
+        </div>
+        <div class="widget ">
+            <h5 class="widgetheading ">Últimas entrada</h5>
+            <ul class="recent ">
+                <li *ngFor="let informa of info" class="headline">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="../../../../assets/img/coame/sidebar/{{informa.imagen}}" class="pull-left" alt=" " />
+                        </div>
+                        <div class="col-md-8">
+                            <p style=font-size:10px>{{informa.fecha}}</p>
+                            <a routerLink="/astronomia/{{ informa.IdSidebar }}">{{informa.titulo}}</a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="pagination">
+            <ul>
+                <button (click)="moverse(-3)" class="btn btn-small btn-lg active">Previo</button>
+                <button (click)="moverse(3)" class="btn btn-small btn-lg active">Próximo</button>
+            </ul>
+
+        </div>
+        <div class="widget ">
+            <h5 class="widgetheading ">Populares</h5>
+            <ul class="tags ">
+                <li><a href="# ">Observaciones</a></li>
+                <li><a href="# ">Luna</a></li>
+                <li><a href="# ">Marte</a></li>
+                <li><a href="# ">Sol</a></li>
+                <li><a href="# ">Tutoriales</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--</aside>-->
