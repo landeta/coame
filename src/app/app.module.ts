@@ -28,7 +28,7 @@ import { RegisterComponent } from './login/register.component';
 
   ],
   exports: [
-    LoginComponent,
+
   ],
   imports: [
     BrowserModule,

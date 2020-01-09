@@ -8,9 +8,6 @@ import { AboutComponent,
          AstronomiaComponent,
          DesarrolloComponent,
          NopagefoundComponent } from './index.pages';
-import { LoginComponent } from '../login/login.component';
-import { RegisterComponent } from '../login/register.component';
-
 const pagesRoutes: Routes = [
   {
   path: '',
@@ -28,8 +25,7 @@ const pagesRoutes: Routes = [
       { path: '**', component: NopagefoundComponent }
       // { path: '', redirectTo: 'dashboard', pathMatch : 'full' },
     ] },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
+
 ];
 
 export const PAGES_ROUTING = RouterModule.forChild(pagesRoutes);
